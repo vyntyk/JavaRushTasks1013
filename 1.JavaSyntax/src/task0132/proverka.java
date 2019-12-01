@@ -13,7 +13,9 @@ public class proverka {
         int[] array = new int[20];
         Scanner sc = new Scanner(System.in);
 
-        for (int i = 0; i <20; i++) array[i] = sc.nextInt();
+        for (int i = 0; i <20; i++) {
+            array[i] = sc.nextInt();
+        }
         return array;
     }
     public static int max(int[] array) {

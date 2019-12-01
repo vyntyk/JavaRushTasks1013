@@ -7,7 +7,7 @@ import java.util.ArrayList;
 Метод в try..catch
 */
 public class Solution {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         readData();
     }
     public static void readData() {
