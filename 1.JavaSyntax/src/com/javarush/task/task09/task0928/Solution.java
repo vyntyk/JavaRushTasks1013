@@ -9,17 +9,13 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         String sourceFileName = reader.readLine();
-        if (!(new File(sourceFileName).exists())){
-            System.out.println("Файл не существует.");
-            sourceFileName = reader.readLine();
-        }
         String destinationFileName = reader.readLine();
 
         InputStream fileInputStream = getInputStream(sourceFileName);
         OutputStream fileOutputStream = getOutputStream(destinationFileName);
 
         int count = 0;
-        while (fileInputStream.available() > 0) ;
+        while (fileInputStream.available() > 0)
         {
             int data = fileInputStream.read();
             fileOutputStream.write(data);
